@@ -10,9 +10,10 @@ Branches
 
 This repository has one branche that relates to OpenSUSE a version.
 
-|Branch |OpenSUSE Version|Container image tag|
-|-------|----------------|-------------------|
-|main   |latest (15.2)   |latest             |
+|Branch    |OpenSUSE Version|Container image tag|
+|----------|----------------|-------------------|
+|main      |leap (15)       |latest             |
+|tumbleweed|tumbleweed      |tumbleweed         |
 
 Manually starting
 -----------------
@@ -22,7 +23,7 @@ podman run \
   --tty \
   --privileged \
   --volume /sys/fs/cgroup:/sys/fs/cgroup:ro \
-  quay.io/ucomesdag/opensuse
+  quay.io/ucomesdag/opensuse:latest
 ```
 
 <!-- container image -->
