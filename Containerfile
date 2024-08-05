@@ -1,4 +1,4 @@
-FROM registry.suse.com/suse/sle15:latest
+FROM registry.opensuse.org/opensuse/leap:latest
 
 ARG BUILD_DATE
 
