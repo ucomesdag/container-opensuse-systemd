@@ -25,6 +25,8 @@ jobs:
       - name: Export all branches
         if: github.event_name == 'schedule'
         uses: ucomesdag/export-branches-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate matrix from branches
         id: matrix
